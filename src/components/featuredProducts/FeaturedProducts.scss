@@ -1,0 +1,28 @@
+.products-featured {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    img {
+      width: 100%;
+    }
+  }
+}
+.old {
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+@media (max-width: 500px) {
+  .products-featured {
+    flex-direction: column;
+    .product-card {
+      width: 90vw;
+    }
+  }
+}

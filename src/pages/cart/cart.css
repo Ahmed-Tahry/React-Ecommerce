@@ -1,0 +1,132 @@
+.sides {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.total-p {
+  flex: 1;
+  max-width: 100px;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: auto;
+  width: 600px;
+  background: rgba(207, 203, 203, 0.3);
+  border-radius: 10px;
+  flex: 6;
+}
+
+.flex-item img {
+  width: 300px;
+  object-fit: cover;
+  margin: auto;
+  margin-left: 0px;
+}
+
+.flex-item p {
+  margin: 3px;
+  margin-top: 5px;
+}
+
+.other-things {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-right: 6rem;
+}
+
+.counter {
+  margin-top: 5px;
+}
+
+.add-to-cart {
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: black;
+  color: white;
+}
+
+.counter input {
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.counter button {
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.counter button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    width: 70vw;
+    background: rgba(207, 203, 203, 0.3);
+    border-radius: 10px;
+    flex: 6;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .sides {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .total-p {
+    flex: 1;
+    max-width: 100px;
+    position: relative;
+    margin-top: 1rem;
+    right: unset;
+  }
+
+  .flex-item img {
+    width: 200px;
+  }
+
+  .other-things {
+    margin-right: 0;
+  }
+  .container-cart {
+    margin-left: 0 !important;
+  }
+}
+.container-cart {
+  margin-left: 40vh;
+}
